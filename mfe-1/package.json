@@ -1,7 +1,8 @@
 {
   "name": "@test/mfe-1",
   "scripts": {
-    "start": "webpack serve --port 9001 --env standalone"
+    "start": "webpack serve --port 9001 --env standalone",
+    "build": "webpack --env standalone"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
@@ -20,6 +21,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "single-spa-react": "^5.1.4"
+    "single-spa-react": "^5.1.4",
+    "styled-components": "^5"
   }
 }

@@ -9,5 +9,10 @@ module.exports = (webpackConfigEnv, argv) => {
     argv,
   });
 
-  return merge(defaultConfig);
+  return merge(defaultConfig, {
+    externals: {
+      react: 'react',
+      ['react-dom']: 'react-dom',
+    },
+  });
 };
