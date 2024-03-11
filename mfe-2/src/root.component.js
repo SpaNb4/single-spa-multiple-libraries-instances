@@ -1,5 +1,21 @@
-import React from "react";
+import * as React from 'react';
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl';
 
-export default function Root(props) {
-  return <section>React version <b>{React.version}</b> is mounted!</section>;
+// Translated messages in French with matching IDs to what you declared
+const messagesInFrench = {
+  myMessage: "Aujourd'hui, nous sommes le {ts, date, ::yyyyMMdd}",
+};
+
+export default function App() {
+  return (
+    <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
+      <p>
+        <FormattedMessage id="myMessage" defaultMessage="Today is {ts, date, ::yyyyMMdd}" values={{ ts: Date.now() }} />
+        <br />
+        <FormattedNumber value={19} style="currency" currency="EUR" />
+        <br />
+        <FormattedMessage id="test" defaultMessage="Test" />
+      </p>
+    </IntlProvider>
+  );
 }
