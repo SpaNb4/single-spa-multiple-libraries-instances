@@ -1,0 +1,35 @@
+{
+  "name": "emotion-11-library-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knenkne/emotion-11-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knenkne/emotion-11-library/issues"
+  },
+  "homepage": "https://github.com/knenkne/emotion-11-library#readme",
+  "dependencies": {
+    "@emotion/css": "10.0.22",
+    "@emotion/core": "10.0.22",
+    "@emotion/styled": "10.0.22"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
