@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5" /* Specify ECMAScript target version */,
+    "module": "commonjs" /* Specify module code generation */,
+    "declaration": true /* Generate .d.ts files */,
+    "outDir": "./dist" /* Specify output directory */,
+    "strict": true /* Enable all strict type-checking options */,
+    "jsx": "react" /* Specify JSX mode: 'preserve', 'react', or 'react-native' */,
+    "esModuleInterop": true /* Enable default imports from modules with no default export */,
+    "skipLibCheck": true /* Skip type checking of declaration files */
+  },
+  "include": ["src"] /* Specify files to include in compilation */,
+  "exclude": ["node_modules", "dist"] /* Specify files to exclude from compilation */
+}
