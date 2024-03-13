@@ -1,23 +1,21 @@
+// MFE 2
 import React from 'react';
 import styled from 'styled-components';
-import { Title } from 'styled-library';
 
-const Title1 = styled.h1`
+const Wrapper = styled.div`
+  padding: 20px;
+  background-color: green;
+`;
+
+const Title = styled.h1`
   font-size: 1.5em;
-  text-align: center;
-  color: #bf4f74;
+  color: red; // intentionally using the same style as MFE 1
 `;
 
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
-
-export default function Root(props) {
+export default function MFE2() {
   return (
     <Wrapper>
-      <Title1>Hello World!</Title1>
-      <Title>Test</Title>
+      <Title>MFE 2</Title>
     </Wrapper>
   );
 }
