@@ -11,6 +11,8 @@ const applications = constructApplications({
 });
 const layoutEngine = constructLayoutEngine({ routes, applications });
 
+// applications.forEach(registerApplication);
+
 setTimeout(() => {
   registerApplication(applications[0]);
 }, 2000);

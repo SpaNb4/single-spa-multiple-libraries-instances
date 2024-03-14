@@ -1,6 +1,6 @@
-import { Library1 } from 'emotion-11-library-1';
+// import { Library1 } from 'emotion-11-library-1';
 import styled from '@emotion/styled';
-import css from '@emotion/css';
+import { css } from '@emotion/core';
 
 const redStyle = () => css`
   color: red;
@@ -15,7 +15,7 @@ export default function Root(props) {
   return (
     <section>
       <Title>Welcome!</Title>
-      <Library1 />
+      {/* <Library1 /> */}
     </section>
   );
 }

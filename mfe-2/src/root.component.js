@@ -1,13 +1,9 @@
-// /** @jsxRuntime classic */
-// /** @jsx jsx */
-// // import React, { useState, useEffect } from 'react';
-// import { jsx } from '@emotion/core';
-import { Library2 } from 'emotion-11-library-2';
+// import { Library2 } from 'emotion-11-library-2';
 import styled from '@emotion/styled';
-import css from '@emotion/css';
+import { css } from '@emotion/react';
 
 const redStyle = () => css`
-  color: black;
+  color: yellow;
 `;
 
 const Title = styled.h1`
@@ -19,7 +15,7 @@ export default function Root(props) {
   return (
     <section>
       <Title>Welcome!</Title>
-      <Library2 />
+      {/* <Library2 /> */}
     </section>
   );
 }
